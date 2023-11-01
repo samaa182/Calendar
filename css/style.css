@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Open+Sans:wght@400;700&family=Roboto+Condensed:wght@300&family=Satisfy&family=Work+Sans:wght@200;300;400;500;600&display=swap');
+body{
+    background-color: rgba(137, 43, 226, 0.63);
+    font-family: "Agbalumo";
+}
+main {
+    width: 650px;
+    height: fit-content;
+    margin: 80px auto;
+    display: flex;
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+}
+main .day {
+    width: 35%;
+    background-color: rgba(137, 43, 226, 0.63);
+    color: white;
+    text-align: center;
+}
+main .day p{
+    padding-top: 50px ;
+}
+main .day h1 {
+    font-size: 80px;
+}
+.calendar {
+    width: 60%;
+    background-color: white;
+}
+.calendar .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+.calendar .header i {
+    margin-left: 20px;
+    cursor: pointer;
+}
+.calendar .weeks ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+
+}
+.calendar .weeks ul li {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 10px;
+    text-align: center;
+    color: black;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.calendar .weeks ul li:hover {
+    background-color: #eee;
+}
+.calendar .weeks ul .inactive {
+    color: #777777a4;
+}
+.calendar .weeks ul .active {
+    background-color: #b479ec;
+    
+}
