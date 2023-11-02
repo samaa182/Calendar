@@ -6,7 +6,7 @@ const prevnexticons = document.querySelectorAll(".icons i");
 let date = new Date(),
   currentYear = date.getFullYear(),
   currentMonth = date.getMonth(),
-  currentDay = date.getDay();
+  currentDay = date.getDate();
 const months = [
   "January",
   "February",
@@ -62,7 +62,7 @@ rendercalendar();
 
 prevnexticons.forEach((icon) => {
   icon.addEventListener("click", () => {
-    currentMonth = icon.parentElement.id === "prev" ? currentMonth - 1 : currentMonth + 1;
+    currentMonth = icon.id === "prev" ? currentMonth - 1 : currentMonth + 1;
 
     if(currentMonth < 0 || currentMonth > 11){
         date = new Date(currentYear, currentMonth);
